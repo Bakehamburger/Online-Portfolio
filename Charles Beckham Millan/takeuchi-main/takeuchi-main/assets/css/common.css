@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+
+/* CSS Reset / Starter */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: "Shippori Mincho", serif;
+    background: linear-gradient(to right, #EFEAE2, #F3F3F3);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    height: auto;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+}
+
+p,
+blockquote {
+    margin: 0 !important;
+}
+
+figure {
+    margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+:root{
+    /* FONTS */
+    --font-size-xxs: 10px;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+    --font-size-4xl: 36px;
+
+    /* COLORS */
+    --bg-gold: #af8d56;
+    --bg-gray: #f3f3f3;
+    --txt-light: #fff;
+    --txt-dark: #414141;
+    --primary-color: #1e2b82;
+    --secondary-color: #101a61;
+    --bg-color: #f5ede9;
+    --bg-card: #8c93bc;
+    --bg-badge: #ff0000;
+    --bg-btn: #cb932f;
+    --arrow-down: #333333;
+    --sub-color: #8385a7;
+    --bg-color: #F5EDE9;
+}
+
+.jap-text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+}
+
+.eng-text{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.fs-16{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    color: var(--txt-dark);
+}
+
+.fs-15{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.02em;   
+}
+
+.fs-14{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.04em;   
+}
+
+.mb-6 {
+    margin-bottom: 6px !important;
+}
+
+.white-text{
+    color: var(--bg-color);
+}
+
+.blue-text{
+    color: var(--primary-color);
+}
+
+.custom-fs{
+    font-family: "Shippori Mincho" , serif;
+    line-height: 180%;
+    font-size: 16px;
+}
+
+section{
+    z-index: 1;
+}
+
+
+.background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between; 
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+.line {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(30, 43, 130, .10); 
+}
+
+/* hannie */
+.desc {
+    font-family: "Shippori Mincho", serif;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: 0.002em;
+    color: var(--primary-color);
+}
+
+.sub {
+    font-family: "Shippori Mincho", serif;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--sub-color);
+}
+
+.subtext {
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* contact form */
+.form-select,
+.select-field {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 28px 8px 6px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none' stroke='%23333333' stroke-width='0.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 4 6 8 10 4'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: calc(100% - 10px) center;
+    border-radius: 2px;
+    cursor: pointer;
+    line-height: 1.5;
+    color: var(--arrow-down);
+}
+
+.mb-custom {
+    margin-bottom: 12px !important;
+}
+
+.pe-custom{
+    padding-right: 12px !important;
+}
+
+.pb-custom{
+    padding-bottom: 12px;
+}
+
+
+.bg-gold {
+    background-color: var(--bg-gold);
+}
+
+.bg-dark-blue {
+    background-color: var(--txt-dark);
+}
+

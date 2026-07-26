@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/icons/company-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Manrope:wght@200..800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/service-list.css">
+    <title>事業紹介</title>
+</head>
+<body>
+<header class="service-header">
+    <nav class="navbar-horizontal">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand"><img src="assets/images/icons/company-logo.svg" alt="company logo"></a>
+            <div class="navbar-right-container">
+            <!-- Desktop Nav + CTA -->
+            <div class="d-none d-lg-flex desktop-nav-container">
+                <a href="service-list.html" class="nav-link">事業紹介</a>
+                <a href="case.html" class="nav-link">導入事例</a>
+                <a href="news.html" class="nav-link">お知らせ</a>
+                <a href="about.html" class="nav-link">会社情報</a>
+            </div>
+            <a href="contact.html" class="d-none d-lg-flex cta-btn">お問い合わせ・資料請求 <img src="assets/images/icons/plane.png" alt=""></a>
+            <button class="burger-btn navbar-toggler" type="button" id="burgerBtn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Mobile Menu -->
+    <div class="mobile-menu container-fluid px-0" id="mobileMenu">
+            <button class="mobile-menu-header" id="closeMenu">&times;</button>
+            <div class="row mobile-nav-links">
+                <div class="col-12 col-md-7 col-lg-5 mobile-nav-links-wrapper">
+                    <div class="top-navlink">
+                    <a href="index.html">
+                        <p>トップ</p> 
+                        <small> Top </small> 
+                    </a>
+                    </div>
+                    <div class="nav-link-service">
+                        <a href="service-list.html">
+                            <p>事業紹介</p> 
+                            <small class="text-orange">Service</small>
+                        </a>
+                    </div>
+                    <ul class="row menu-service-list">
+                        <li class="col-7 col-lg-12 list list1"><a class="list1" href="local-gov.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">自治体ソリューション</a></li>
+                        <li class="col-6 col-lg-12 list col-lg-4"><a href="education.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">教育ソリューション</a></li>
+                        <li class="col-8 col-lg-12 list col-lg-4"><a href="corporate.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">企業・ビジネスソリューション</a></li>
+                        <li class="col-6 col-lg-12 list col-lg-4"><a href="support.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">サポートサービス</a></li>
+                    </ul>
+                    <div class="nav-link-case">
+                        <a href="case.html">
+                            <p>導入事例</p> 
+                            <small class="text-orange">Case</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 mobile-nav-links-wrapper mobile-nav-links-wrapper2">
+                    <div class="nav-link-news">
+                        <a href="news.html">
+                            <p>お知らせ</p> 
+                            <small class="text-orange">News</small>
+                        </a>
+                    </div>
+                    <div class="nav-link-about">
+                        <a href="about.html">
+                            <p>お知らせ</p> 
+                            <small class="text-orange">About</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12  col-lg-4 d-flex flex-lg-column cta-container">
+                    <div class="mobile-menu-cta">
+                        <div class="menu-header-cta">
+                            <p class="ms-2">電話で <br class="d-block d-lg-none"> 問い合わせる</p>
+                        </div>
+                        <div class="cta-content d-flex justify-content-between">
+                                <div class="d-flex justify-content-center align-items-end justify-content-lg-center align-items-lg-center flex-column">
+                                    <small>トゥワロー</small>
+                                    <a href="0120108624" class="en cta-tel" target="_blank">0120-108624</a> 
+                                </div>
+                            <div class="d-flex justify-content-end align-items-lg-end justify-content-lg-center">
+                                <img src="assets/images/icons/menu-play-btn-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">
+                    <div class="mobile-menu-cta mobile-menu-cta2">
+                        <div class="menu-header-cta">
+                            <p class="fw-bold">電話で <br class="d-block d-lg-none"> 問い合わせる</p>
+                        </div>
+                        <div class="cta-content cta-content2 d-flex justify-content-between">
+                            <div class="request-information d-flex justify-content-lg-center align-items-center">
+                            <p class="fw-bold">お問い合わせ・ <br class="d-block d-md-none"> 資料請求</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <img src="assets/images/icons/menu-play-btn-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="header-content">
+        <h1 class="main-title-jap txt-color-orange">事業紹介</h1>
+        <p class="main-title-eng txt-color-orange-rgba">Service</p>
+    </div>
+
+    <div class="curve-container">
+        <svg width="620" height="93" viewBox="0 0 620 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-curve-svg">
+            <path d="M621 93H0C25.4154 93 46.0186 72.3426 46.0186 46.8605V46.1395C46.0186 20.6574 66.6219 0 92.0373 0H621V93Z" fill="white"/>
+        </svg>
+        
+        <div class="breadcrumb-overlay">
+            <a href="index.html">トップ</a>
+            <span class="breadcrumb-arrow">▶</span>
+            <span class="breadcrumb-current">事業紹介</span>
+        </div>
+    </div>
+</header>
+    
+    
+<main class="service-list-main">
+    <section class="service-landing-page">
+        <div class="container site-container px-0">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="service-section-header">
+                        <h2 class="headline-text text-orange">技術で応える。<br>想いに寄り添う。</h2>
+                        <p class="description-text txt-color-gray mt-4 pt-1">40年以上にわたり、お客様とともに歩んできた確かな実績。<br>
+                        私たちは、お客様の潜在的な課題を丁寧に引き出し、最適な環境づくりを実現します。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 1st card -->
+            <div class="row service-grid top-space custom-gap mb-gap">
+                <div class="col-4 col-sm-4 col-md-4">
+                    <div class="service-card txt-color-white" style="background-image: url('assets/images/service/lgs-bg.png');">
+                        <div class="card-content">
+                            <h3 class="service-title-jap">自治体<br>ソリューション</h3>
+                            <p class="service-title-eng">Local Government Solutions</p>
+                        </div>
+                    </div>
+                </div>
+        
+                    <!-- 2nd card -->
+                <div class="col-4 col-sm-4 col-md-4">
+                    <div class="service-card txt-color-white" style="background-image: url('assets/images/service/es-bg.png');">
+                        <div class="card-content">
+                            <h3 class="service-title-jap">教育<br>ソリューション</h3>
+                            <p class="service-title-eng">Education Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                    <!-- 3rd card -->
+                <div class="col-4 col-sm-4 col-md-4 ">
+                    <div class="service-card txt-color-white" style="background-image: url('assets/images/service/cbs-bg.png');">
+                        <div class="card-content">
+                            <h3 class="service-title-jap">企業・ビジネス<br>ソリューション</h3>
+                            <p class="service-title-eng">Corporate & Business Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!-- 4th card -->
+            <div class="row service-grid">
+                <div class="col-12">
+                    <div class="service-card wide-card txt-color-white" style="background-image: url('assets/images/service/wide-card.png');">
+                        <div class="top-left-content">
+                            <h3 class="service-title-jap md-text">サポートサービス</h3>
+                            <p class="service-title-eng">Support Services</p>
+                        </div>
+                        <div class="time-badge">365日24時間</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="solutions-section text-light">
+    <div class="container site-container">
+        <div class="row align-items-start">
+            <div class="col-lg-6 col-12">
+                <h2 class="service-title-jap service-title-fw-light">お客様の課題・環境に合わせて<br>設計から保守まで包括的にサポートします</h2>
+            </div>
+            <div class="col-lg-4 offset-lg-1 col-12 mt-4 mt-lg-0 pt-1">
+                <div class="description-text">
+                    <p>映像・音響・ICTシステムをトータルで設計・構築。<br> 当社オリジナルソリューションに加え、マルチベンダーとして多様な製品を組み合わせ、空間ごとに最適な構成をご提案します。<br><br>さらに、導入後の保守・運用まで一貫してサポート。安心して長くご利用いただける環境を提供します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5 g-lg-5 solution-steps-wrapper">
+            <div class="col mt-0 custom-card">
+                <div class="solution-step-card">
+                    <div class="step-number">1</div>
+                    <p class="step-title">リサーチ</p>
+                    <figure class="step-icon">
+                        <img src="assets/images/case/ear-icon.png" alt="Research">
+                    </figure>
+                </div>
+            </div>
+            <div class="col mt-0 custom-card">
+                <div class="solution-step-card">
+                    <div class="step-number">2</div>
+                    <p class="step-title">コンサルティング</p>
+                    <figure class="step-icon">
+                        <img src="assets/images/case/lightbulb-icon.png" alt="Consulting">
+                    </figure>
+                </div>
+            </div>
+            <div class="col mt-0 custom-card">
+                <div class="solution-step-card">
+                    <div class="step-number">3</div>
+                    <p class="step-title">設計・開発</p>
+                    <figure class="step-icon">
+                        <img src="assets/images/case/compass-icon.png" alt="Design">
+                    </figure>
+                </div>
+            </div>
+            <div class="col mt-0 custom-card">
+                <div class="solution-step-card">
+                    <div class="step-number">4</div>
+                    <p class="step-title">施工・搬入</p>
+                    <figure class="step-icon">
+                        <img src="assets/images/case/tools-icon.png" alt="Installation">
+                    </figure>
+                </div>
+            </div>
+            <div class="col mt-0">
+                <div class="solution-step-card">
+                    <div class="step-number">5</div>
+                    <p class="step-title">保守・運用支援</p>
+                    <figure class="step-icon">
+                        <img src="assets/images/case/holding-hands-icon.png" alt="Support">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 strength-feature-title">
+                <h3 class="main-title-jap txt-color-white">私たちの特長</h3>
+            </div>
+        </div>
+
+        <div class="row feature-row">
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-item-list">
+                    <span class="feature-num">01</span>
+                    <div class="feature-content">
+                        <h4 class="main-title-jap txt-color-white feature-title">40年以上の実績</h4>
+                        <p class="feature-desc">1983年の創業より、お客様と共に歩んだ実績があります。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-item-list">
+                    <span class="feature-num">02</span>
+                    <div class="feature-content">
+                        <h4 class="main-title-jap txt-color-white feature-title">豊富な導入実績</h4>
+                        <p class="feature-desc">議場システムの導入実績は道内83%の圧倒的な信頼とシェアを誇ります。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-item-list">
+                    <span class="feature-num">03</span>
+                    <div class="feature-content">
+                        <h4 class="main-title-jap txt-color-white feature-title">マルチベンダー</h4>
+                        <p class="feature-desc">複数の機器から最適を選んでいただくことが可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="services-list-solutions" class="col-12">
+    <div class="container site-container">
+        
+        <div class="col-lg-12 services-list-solutions-card"> 
+            <div class="row g-0">
+                <a href="local-gov.html" class="row g-0 text-decoration-none">
+                    <div class="col-lg-6">
+                        <figure class="services-list-solutions-image mb-0">
+                            <img src="assets/images/service/lgs-bg.png" class="img-fluid" alt="Local Government Solutions">
+                        </figure>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="services-list-solutions-content d-flex flex-column h-100">
+                            <div class="mb-auto">
+                                <h3 class="service-title-jap">自治体<br><span>ソリューション</span></h3>
+                                <p class="service-title-eng">Local Government Solutions</p>
+                            </div>
+                            
+                            <div class="d-flex align-items-end justify-content-between">
+                                <p class="services-list-solutions-desc mb-0">
+                                    議会運営に合わせ様々な機器を組み合わせ、最適なソリューションをご提案。
+                                </p>
+                                <div class="services-list-solutions-btn">
+                                    <img src="assets/images/icons/sm-play-btn.svg" alt="play icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+		
+		
+		<div class="col-lg-12 services-list-solutions-card">
+            <div class="row g-0 g-custom-24">
+                <a href="education.html" class="row g-0 text-decoration-none">
+                    <div class="col-lg-6">
+                        <figure class="services-list-solutions-image mb-0">
+                            <img src="assets/images/service/es-bg.png" class="img-fluid" alt="Education Solutions">
+                        </figure>
+                    </div>
+                    
+                    <div class="col-lg-6 mt-0">
+                        <div class="services-list-solutions-content d-flex flex-column h-100">
+                            <div class="mb-auto">
+                                <h3 class="service-title-jap">教育<br><span>ソリューション</span></h3>
+                                <p class="service-title-eng">Education Solutions</p>
+                            </div>
+                            
+                            <div class="d-flex align-items-end justify-content-between">
+                                <p class="services-list-solutions-desc mb-0">
+                                    校内LANを使用したVODや学校ICTによる各種授業支援等、小 <br class="d-none d-sm-block">学校〜大学まで文教システムをサポート。
+                                </p>
+                                <div class="services-list-solutions-btn">
+                                    <img src="assets/images/icons/sm-play-btn.svg" alt="play icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+		
+		
+		<div class="col-lg-12 services-list-solutions-card">
+            <div class="row g-0">
+                <a href="corporate.html" class="row g-0 text-decoration-none">
+                    <div class="col-lg-6">
+                        <figure class="services-list-solutions-image mb-0">
+                            <img src="assets/images/service/cbs-bg.png" class="img-fluid" alt="Corporate & Business Solutions">
+                        </figure>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="services-list-solutions-content d-flex flex-column h-100">
+                            <div class="mb-auto">
+                                <h3 class="service-title-jap">企業・ビジネス<br><span>ソリューション</span></h3>
+                                <p class="service-title-eng">Corporate & Business Solutions</p>
+                            </div>
+                            
+                            <div class="d-flex align-items-end justify-content-between">
+                                <p class="services-list-solutions-desc mb-0">
+                                    オフィス・商業施設・公共施設等、お客様のニーズに合わせた <br class="d-none d-sm-block">映像音響機器のAVシステムをご提案。
+                                </p>
+                                <div class="services-list-solutions-btn">
+                                    <img src="assets/images/icons/sm-play-btn.svg" alt="play icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-12 services-list-solutions-card">
+            <div class="row g-0">
+                <a href="support.html" class="row g-0 text-decoration-none">
+                    <div class="col-lg-6">
+                        <figure class="services-list-solutions-image mb-0">
+                            <img src="assets/images/service/ss-bg.png" class="img-fluid" alt="Support Services">
+                        </figure>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="services-list-solutions-content d-flex flex-column h-100">
+                            <div class="mb-auto">
+                                <h3 class="service-title-jap">サポートサービス</h3>
+                                <p class="service-title-eng">Support Services</p>
+                            </div>
+                            
+                            <div class="d-flex align-items-end justify-content-between">
+                                <p class="services-list-solutions-desc mb-0">
+                                    導入前のご相談から、導入後のトラブル対応まで、迅速かつ丁 <br class="d-none d-sm-block">寧におサポート。
+                                </p>
+                                <div class="services-list-solutions-btn">
+                                    <img src="assets/images/icons/sm-play-btn.svg" alt="play icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+<section id="flow-section" class="pt-2">
+	<div class="container p-0">
+		
+		<div class="row m-0">
+            <div class="col-12 offset-md-2  text-start">
+                <h2 class="main-title-jap txt-color-orange">導入までの流れ</h2>
+                <span class="main-title-eng txt-color-orange-rgba">Flow</span>
+            </div>
+		</div>
+
+		<div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8 px-0">
+                
+                <div class="row flow-item">
+                    <div class="col-auto timeline-col">
+                        <div class="flow-number">01</div>
+                        <div class="vertical-line"></div>
+                    </div>
+                <div class="col ps-3 pb-gap">
+                    <h3 class="step-header">ヒアリング</h3>
+                    <p class="step-description">
+                    お客様の課題やご要望、利用環境、運用状況を詳しくお伺いします。<br>
+                    現状の問題点や将来の拡張性も含め、最適な構成を検討するための要件を整理します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="row flow-item">
+                <div class="col-auto timeline-col">
+                    <div class="flow-number">02</div>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col ps-4 ps-lg-3 pb-gap-lg">
+                    <h3 class="step-header">ご提案・設計</h3>
+                    <p class="step-description">
+                    ヒアリング内容をもとに、最適なシステム構成・機器選定・ネットワーク設計をご提案します。<br>
+                    機能・性能・コストのバランスを考慮し、空間や用途に合わせた最適な環境を設計します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="row flow-item">
+                <div class="col-auto timeline-col">
+                    <div class="flow-number">03</div>
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="col ps-4 pb-gap-lg">
+                    <h3 class="step-header">構築・設置</h3>
+                    <p class="step-description">
+                    ご承認後、機器の手配から設置、設定、動作確認までを実施。<br>
+                    安全かつ確実な施工により、安定した運用環境を構築します。
+                    </p>
+                </div>
+            </div>
+
+                <div class="row flow-item">
+                    <div class="col-auto timeline-col">
+                        <div class="flow-number">04</div>
+                    </div>
+                    <div class="col ps-4">
+                        <h3 class="step-header">運用サポート・保守</h3>
+                        <p class="step-description">
+                        導入後も、トラブル対応やメンテナンス、運用サポートを継続。<br>
+                        長期的に安心してご利用いただけるよう、保守・改善までトータルで支援します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</section>
+</main>
+
+<footer class="footer-section">
+    <a href="contact.html" class="row footer-banner mx-auto">
+            
+                <div class="footer-banner-content">
+                    <div class="col-12 col-lg-4 footer-banner-title">
+                        <h2>
+                            お問い合わせ <br>
+                            資料請求
+                        </h2>
+                        <p>Contact</p>     
+                    </div>
+                    <div class="col-12 col-lg-4 footer-banner-description">
+                        お客様の課題・環境に合わせて設計から保守まで包括的にサポートします。無料のお見積りも承っております。内容確認の上、担当よりご連絡させていただきます。
+                    </div>
+                    <div class="col-12 col-lg-4 footer-banner-cta">
+                        <img src="assets/images/icons/sm-play-btn.svg" alt="">
+                    </div>
+                </div>
+                
+        
+    </a>
+    <div class="footer-body">
+        <div class="row footer-content mx-auto">
+            <div class="col-12 col-lg-6 footer-header">
+                <h2>
+                    北海道に寄り添い 
+                    ともに未来をつくる
+                </h2>
+            </div>
+            <figure class="col-12 footer-end order-1 order-lg-5">
+                <img src="assets/images/icons/logo-white.svg" alt="logo-white">
+            </figure>
+            <div class="col-12 col-lg-3 footer-left-nav-links order-2 order-lg-3">
+                <div class="footer-links footer-service-link">
+                    <a href="#service">
+                        <p>事業紹介</p> 
+                        <small>service</small>
+                    </a>
+                </div>
+                <ul class="menu-service-list-footer">
+                    <li><a href="local-gov.html"><img src="assets/images/icons/line-white.svg" alt="line">自治体ソリューション</a></li>
+                    <li><a href="education.html"><img src="assets/images/icons/line-white.svg" alt="line">教育ソリューション</a></li>
+                    <li><a href="corporate.html"><img src="assets/images/icons/line-white.svg" alt="line">企業・ビジネスソリューション</a></li>
+                    <li><a href="support.html"><img src="assets/images/icons/line-white.svg" alt="line">サポートサービス</a></li>
+                </ul>
+                <div class="footer-links">
+                <a href="#case">
+                    <p>導入事例</p> 
+                    <small>case</small>
+                </a>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-3  footer-right-nav-links order-4 order-lg-4">
+                <div class="footer-links">
+                    <a href="#news">
+                        <p>お知らせ</p> 
+                        <small>news</small>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">
+                        <p>会社情報</p> 
+                        <small>about</small>
+                    </a>
+                </div>
+                <div class="footer-links footer-links-contact-cus-pd">
+                    <a href="contact.html">
+                        <p>お問い合わせ・資料請求</p> 
+                        <small class="custom-fw">Contact</small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 footer-bottom-container order-1 order-lg-5">
+                <div class="footer-left-links">
+                <p>
+                    〒007-0841  
+                </p>
+                <p>
+                    札幌市東区北41条東8丁目2番25号
+                </p>
+                <p> 
+                    <a href="0117432233 ">TEL 011-743-2233 </a>
+                </p>
+                <p>
+                    FAX 011-743-2319
+                </p>
+                </div>
+            </div>
+            <div class="col-lg-6 footer-right-links order-5">
+                <a href="privacy-policy.html">
+                <small> 
+                    プライバシーポリシー
+                </small>
+                </a>
+                <a href="cookie-policy.html">
+                <small>
+                    クッキーポリシー
+                </small>
+                </a>
+                <small class="d-none d-lg-block">
+                    Copyright © 2026 TOWA E&C Corporation All rights reserved.
+                </small>
+                <small class="d-block d-lg-none custom-pd-copyright "> © 2026 TOWA E&C Corporation All rights reserved. </small>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/index.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/icons/company-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Manrope:wght@200..800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/about.css">    
+    <title>会社情報</title>
+
+</head>
+<body class="bg-gray-base" id="about"> 
+    <header class=" about-header">
+        <nav class="navbar-horizontal">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand"><img src="assets/images/icons/company-logo.svg" alt="company logo"></a>
+                <div class="navbar-right-container">
+                <!-- Desktop Nav + CTA -->
+                <div class="d-none d-lg-flex desktop-nav-container">
+                    <a href="service-list.html" class="nav-link">事業紹介</a>
+                    <a href="case.html" class="nav-link">導入事例</a>
+                    <a href="news.html" class="nav-link">お知らせ</a>
+                    <a href="about.html" class="nav-link">会社情報</a>
+                </div>
+                <a href="contact.html" class="d-none d-lg-flex cta-btn">お問い合わせ・資料請求 <img src="assets/images/icons/plane.png" alt=""></a>
+                <button class="burger-btn navbar-toggler" type="button" id="burgerBtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Mobile Menu -->
+            <div class="mobile-menu container-fluid px-0" id="mobileMenu">
+            <button class="mobile-menu-header" id="closeMenu">&times;</button>
+            <div class="row mobile-nav-links">
+                <div class="col-12 col-md-7 col-lg-5 mobile-nav-links-wrapper">
+                    <div class="top-navlink">
+                    <a href="index.html">
+                        <p>トップ</p> 
+                        <small> Top </small> 
+                    </a>
+                    </div>
+                    <div class="nav-link-service">
+                        <a href="service-list.html">
+                            <p>事業紹介</p> 
+                            <small class="text-orange">Service</small>
+                        </a>
+                    </div>
+                    <ul class="row menu-service-list">
+                        <li class="col-7 col-lg-12 list list1"><a class="list1" href="local-gov.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">自治体ソリューション</a></li>
+                        <li class="col-6 col-lg-12 list col-lg-4"><a href="education.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">教育ソリューション</a></li>
+                        <li class="col-8 col-lg-12 list col-lg-4"><a href="corporate.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">企業・ビジネスソリューション</a></li>
+                        <li class="col-6 col-lg-12 list col-lg-4"><a href="support.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">サポートサービス</a></li>
+                    </ul>
+                    <div class="nav-link-case">
+                        <a href="case.html">
+                            <p>導入事例</p> 
+                            <small class="text-orange">Case</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 mobile-nav-links-wrapper mobile-nav-links-wrapper2">
+                    <div class="nav-link-news">
+                        <a href="news.html">
+                            <p>お知らせ</p> 
+                            <small class="text-orange">News</small>
+                        </a>
+                    </div>
+                    <div class="nav-link-about">
+                        <a href="about.html">
+                            <p>お知らせ</p> 
+                            <small class="text-orange">About</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12  col-lg-4 d-flex flex-lg-column cta-container">
+                    <div class="mobile-menu-cta">
+                        <div class="menu-header-cta">
+                            <p class="ms-2">電話で <br class="d-block d-lg-none"> 問い合わせる</p>
+                        </div>
+                        <div class="cta-content d-flex justify-content-between">
+                                <div class="d-flex justify-content-center align-items-end justify-content-lg-center align-items-lg-center flex-column">
+                                    <small>トゥワロー</small>
+                                    <a href="0120108624" class="en cta-tel" target="_blank">0120-108624</a> 
+                                </div>
+                            <div class="d-flex justify-content-end align-items-lg-end justify-content-lg-center">
+                                <img src="assets/images/icons/menu-play-btn-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">
+                    <div class="mobile-menu-cta mobile-menu-cta2">
+                        <div class="menu-header-cta">
+                            <p class="fw-bold">電話で <br class="d-block d-lg-none"> 問い合わせる</p>
+                        </div>
+                        <div class="cta-content cta-content2 d-flex justify-content-between">
+                            <div class="request-information d-flex justify-content-lg-center align-items-center">
+                            <p class="fw-bold">お問い合わせ・ <br class="d-block d-md-none"> 資料請求</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <img src="assets/images/icons/menu-play-btn-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="header-content about-header-content">
+        <h1 class="main-title-jap about-main-title-jap txt-color-orange">会社情報</h1>
+        <p class="main-title-eng txt-color-orange-rgba">About</p>
+    </div>
+
+    <div class="curve-container">
+        <svg width="620" height="93" viewBox="0 0 620 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-curve-svg">
+            <path d="M621 93H0C25.4154 93 46.0186 72.3426 46.0186 46.8605V46.1395C46.0186 20.6574 66.6219 0 92.0373 0H621V93Z" fill="white"/>
+        </svg>
+        
+        <div class="breadcrumb-overlay">
+            <a href="index.html">トップ</a>
+            <span class="breadcrumb-arrow">▶</span>
+            <span class="breadcrumb-current">会社情報</span>
+        </div>
+    </div>
+</header>
+    <main class="content-white-bottom mx-0">
+        <div class="container">
+            <div class="row">
+                <div class="about-top">
+                    <h1>
+                        技術×営業×サポートの総合力で
+                        <br>
+                        お客様を支え続ける。 
+                        <br>
+                        <br>
+                        <span class="d-none d-lg-block">北海道に根差す、現場密着型の伴走者。</span>
+                        <span class="d-block d-lg-none">
+                            北海道の場を知り尽くした、<br>
+                            現場密着型の伴走者。
+                        </span>
+
+                    </h1>
+                </div>
+            </div>
+
+            <div class="company-philosophy-content">
+                <p>
+                    東和E&Cは、北海道を拠点に、<br>
+                    人が集い、想いを交わす空間を支えるエンジニアリング企業です。
+                    <br>
+                    <br>
+                    議場、学校、文化施設、オフィス。<br>
+                    それぞれの現場に異なる課題があり、<br>
+                    私たちはその一つひとつに、チームで向き合ってきました。 
+                    <br>
+                    <br>
+                    設計から施工、保守・運用までを一貫して担い、<br>
+                    単なる設備ではなく、「安心して使い続けられる環境」を提供しています。
+                    <br> 
+                    <br>
+                    目指しているのは、一番に頼られる存在であること。<br>
+                    社員の団結力を強みに、お客様とともに考え、ともに乗り越え、<br>
+                    その先の利用者までが心地よく使える場をつくります。
+                    <br>
+                    <br>
+                    これからも技術と信頼を積み重ねながら、<br> 
+                    北海道の社会を支えるパートナーであり続けます。
+                </p>
+            </div>
+            <div class="about_management-philosophy-container">
+                <div class="management-philosophy-title">
+                    <p>経営理念</p>
+                </div>
+                
+                <div class="about_management-philosophy">
+                    <p>
+                        常に高品質な仕事を提供しつづける
+                    </p>
+                </div>
+                <div class="about_management-philosophy">      
+                    <p>
+                        社員のしあわせを追求 <br class="d-block d-lg-none"> する
+                    </p>   
+                </div>
+                <div class="about_management-philosophy">
+                    <p> 
+                        企業活動を通して社会に貢 <br class="d-block d-lg-none"> 献する
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="message-section">
+            <div class="container">
+                <div class="row">
+                    <div class="section-header-title">
+                        <h2>代表挨拶</h2>
+                        <p>Message</p>
+                    </div>
+                    <figure class="col-12 col-lg-5 company-president-image">
+                        <img src="assets/images/about/company-president.png" alt="Hiroki Narita image / president of the company">
+                    </figure>
+                    <div class="col-12 col-lg-6 message-content offset-lg-1">
+                        <p>
+                            当社は創業以来、映像・音響・ICTの分野において、<br>
+                             お客様の信頼にお応えすることを第一に事業を続けてまいりました。 <br>
+                            社会や技術が大きく変化する中で、求められる役割も年々高度化しています。 <br>
+                             そのような時代だからこそ、私たちは一つひとつの仕事に誠実に向き合い、確かな品質と安全を提供し続けることを何より大切にしています。<br>
+                            また、企業の成長は社員一人ひとりの成長によって支えられています。<br>
+                             働く人がやりがいを持ち、安心して力を発揮できる環境づくりにも取り組み、技術力と人間力の両面から、より良いサービスの提供を目指してまいります。<br> 
+                            これからも、お客様・社会・社員にとって信頼される企業であり続けられるよう、挑戦と改善を重ねながら、持続的な成長に取り組んでまいります。
+                        </p>
+                        <div class="about-company-president text-end">
+                        <p>
+                            代表取締役社長
+                        </p>
+                        <p>
+                            成田弘樹
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-company-section">
+            <div class="container">
+                <div class="row company-container ">
+                    
+                    <div class="section-header-title d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-center">
+                        <h2>会社概要</h2>
+                        <p>Company Overview</p>
+                    </div>
+                    <div class="company-overview-content-wrapper">
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">会社名</div>
+                            <div class="col content-col">東和Ｅ＆Ｃ株式会社</div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">創業</div>
+                            <div class="col content-col">1983年11月</div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">役員</div>
+                            <div class="col content-col">
+                                <div class="d-flex justify-content-start">
+                                    <div style="min-width: 100px;">代表取締役</div><div>成田 弘樹</div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div style="min-width: 100px;">専務取締役</div><div>西本 隆</div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div style="min-width: 100px;">取締役</div><div>金田 久浩</div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div style="min-width: 100px;">監査役</div><div>田中 孝一</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">資本金</div>
+                            <div class="col content-col">1,500万円</div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col d-flex align-items-center">所在地</div>
+                            <div class="col content-col">
+                                〒007-0841<br>
+                                札幌市東区北41条東8丁目2番25号
+                            </div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">電話番号</div>
+                            <div class="col content-col">011-743-2233</div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">FAX番号</div>
+                            <div class="col content-col">011-743-2319</div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col">従業員数</div>
+                            <div class="col content-col">16名</div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col d-flex align-items-center">事業内容</div>
+                            <div class="col content-col">
+                                映像・音響・ICT、情報通信の設計・施工・販売・保守・ <br class="d-none d-lg-flex"> メンテナンス
+                            </div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col d-lg-flex flex-lg-column justify-content-lg-center">建設業許可</div>
+                            <div class="col content-col">
+                                北海道知事許可（般-6） <br>
+                                石 第 18527 号<br class="d-block d-lg-none">
+                                電気工事業・電気通信工事業
+                            </div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col label-col-main-suppliers d-lg-flex flex-lg-column justify-content-lg-center">主な仕入先（敬称略）</div>
+                            <div class="col content-col">
+                                東和エンジニアリング、パナソニッ <br class="d-block d-lg-none">
+                                ク、オーディオテクニカ、TOA、メ <br class="d-block d-lg-none">
+                                ディアエッジ、リコージャパン、JVC <br class="d-block d-lg-none">
+                                ケンウッド、ユニペックス、シャー <br class="d-block d-lg-none">
+                                プ、キヤノン、テクノホライゾン、 <br class="d-block d-lg-none">
+                                IDK、イメージニクス、ティアック、 <br class="d-block d-lg-none">
+                                田栄、inMusicJapan、ランドコン <br class="d-block d-lg-none">
+                                ピュータ、ユニモテクノロジー、ケ <br class="d-block d-lg-none">
+                                アコム、シチズンTIC、セイコー、東 <br class="d-block d-lg-none">
+                                芝ライテック、DXアンテナ、マスプ <br class="d-block d-lg-none">
+                                ロ電工、日本アンテナ、富士ソフ <br class="d-block d-lg-none">
+                                ト、カナレ電気、ケイアイシー、サンワサプライ、エレコム、日興通 <br class="d-block d-lg-none">
+                                信、共栄商事、ソフトバンク、ダイ <br class="d-block d-lg-none">
+                                ワボウ情報システム 他
+                            </div>
+                        </div>
+
+                        <div class="row-border d-flex">
+                            <div class="col-3 label-col label-col-business-partners d-lg-flex flex-lg-column justify-content-lg-center">取引先 <br>（敬称略）</div>
+                            <div class="col content-col">
+                                札札幌市、北海道庁、北海道内各市町 <br class="d-block d-lg-none">
+                                村、公共機関、各教育委員会 他 　 北 <br class="d-block d-lg-none">
+                                海道各農業協同組合  <br class="d-block d-lg-none">
+                                北海道文教大学、東海大学、公立千 <br class="d-block d-lg-none">
+                                歳科学技術大学、札幌医科大学、北 <br class="d-block d-lg-none">
+                                海道大学、北洋大学、拓殖大学北海 <br class="d-block d-lg-none">
+                                道短期大学 他  <br class="d-block d-lg-none">
+                                北海道電力(株)、(株)札幌ドーム、 <br class="d-block d-lg-none">
+                                (株)ニトリ 他  <br class="d-block d-lg-none">
+                                エプソン販売(株)、リコージャパン <br class="d-block d-lg-none">
+                                (株)、三菱電機ビルソリューションズ <br class="d-block d-lg-none">
+                                (株)、  <br class="d-block d-lg-none">
+                                富士フイルムイメージングシステム <br class="d-block d-lg-none">
+                                ズ(株)、大丸(株)、コクヨ北海道販売 <br class="d-block d-lg-none">
+                                (株)、  <br class="d-block d-lg-none">
+                                北海道オフィス・マシン(株)、(株)イ <br class="d-block d-lg-none">
+                                トーキ、(株)内田洋行、(株)ウチダシ <br class="d-block d-lg-none">
+                                ステムズ、  <br class="d-block d-lg-none">
+                                (株)近藤商会、デュプロ万博(株)、東 <br class="d-block d-lg-none">
+                                日本電信電話(株) 他 <br class="d-block d-lg-none">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3 label-col d-flex align-items-center">取引銀行</div>
+                            <div class="col content-col">
+                                北洋銀行<br>
+                                北陸銀行<br>
+                                りそな銀行<br>
+                                北海道銀行
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history-section">
+            <div class="container px-0">
+                <div class="history-card">
+                    <div class="row">
+                        <div class="section-header-title col-lg-3 mb-4">
+                            <h2>沿革</h2>
+                            <p>History</p>
+                        </div>
+
+                        <div class="col-12 col-lg-8 timeline-container">
+                            <div class="timeline">
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">1983.11</div>
+                                    <div class="description">北海東和エンジニアリング株式会社を設立</div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">1994.8</div>
+                                    <div class="description">商法改正に伴い資本金を1,000万円に増資</div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">1998.4</div>
+                                    <div class="description">資本金を1,500万円に増資</div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">2003.9</div>
+                                    <div class="description">東和E&C株式会社に社名変更</div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">2018.12</div>
+                                    <div class="description">社屋建設に伴い事務所移転</div>
+                                </div>
+
+                                <div class="timeline-item timeline-item6">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">2023.11</div>
+                                    <div class="description">創業40周年を迎える</div>
+                                </div>
+
+                                <div class="timeline-item mb-0">
+                                    <div class="timeline-dot"></div>
+                                    <div class="year">2024.5</div>
+                                    <div class="description">東和グループのグループ会社となる</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="access-section">
+<div class="container access-container">
+    <div class="access-header">
+        <div class="section-header-title">
+            <h2>アクセス</h2>
+            <p>Access</p>
+        </div>
+
+        <div class="address-info">
+            <div>〒007-0841</div>
+            <div>札幌市東区北41条東8丁目2番25号</div>
+            <div>地下鉄東豊線 栄町駅 徒歩12分</div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=札幌市東区北41条東8丁目2番25号" target="_blank" class="btn-google">
+            <span class="btn-label">GoogleMap</span>
+            <span class="btn-arrow">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="white">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </span>
+        </a>
+    </div>
+
+    <div class="map-wrapper">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.8228518840254!2d141.36217467664687!3d43.108269587498715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2f1957262f3f%3A0x6b3b555027588722!2z44CSMDA3LTA4NDEg5YyX5rW36YGT5pyt5bmM5biC5p2x5Yy65YyX77yU77yR5p2h5p2x77yY5LiB55uu77yS4oiS77yS77yV!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+</section>
+    </main>
+    <!-- FOOTER -->
+<footer class="footer-section about-footer-section">
+    <div class="row footer-banner mx-auto">
+        <div class="footer-banner-content">
+            <div class="col-12 col-lg-4 footer-banner-title">
+                <h2>
+                    お問い合わせ <br>
+                    資料請求
+                </h2>
+                <p>Contact</p>     
+            </div>
+            <div class="col-12 col-lg-4 footer-banner-description">
+                お客様の課題・環境に合わせて設計から保守まで包括的にサポートします。無料のお見積りも承っております。内容確認の上、担当よりご連絡させていただきます。
+            </div>
+            <div class="col-12 col-lg-4 footer-banner-cta">
+                <img src="assets/images/icons/sm-play-btn.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer-body">
+        <div class="row footer-content mx-auto">
+            <div class="col-12 col-lg-6 footer-header">
+                <h2>
+                    北海道に寄り添い 
+                    ともに未来をつくる
+                </h2>
+            </div>
+            <div class="col-12 footer-end order-1 order-lg-5">
+            <img src="assets/images/icons/logo-white.svg" alt="">
+            </div>
+            <div class="col-12 col-lg-3 footer-left-nav-links order-2 order-lg-3">
+                <div class="footer-links footer-service-link">
+                    <a href="#service">
+                        <p>事業紹介</p> 
+                        <small>service</small>
+                    </a>
+                </div>
+                <ul class="menu-service-list-footer">
+                    <li><a href="local-gov.html"><img src="assets/images/icons/line-white.svg" alt="line">自治体ソリューション</a></li>
+                    <li><a href="education.html"><img src="assets/images/icons/line-white.svg" alt="line">教育ソリューション</a></li>
+                    <li><a href="corporate.html"><img src="assets/images/icons/line-white.svg" alt="line">企業・ビジネスソリューション</a></li>
+                    <li><a href="support.html"><img src="assets/images/icons/line-white.svg" alt="line">サポートサービス</a></li>
+                </ul>
+                <div class="footer-links">
+                <a href="case.html">
+                    <p>導入事例</p> 
+                    <small>case</small>
+                </a>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-3  footer-right-nav-links order-4 order-lg-4">
+                <div class="footer-links">
+                    <a href="news.html">
+                        <p>お知らせ</p> 
+                        <small>news</small>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">
+                        <p>会社情報</p> 
+                        <small>about</small>
+                    </a>
+                </div>
+                <div class="footer-links footer-links-contact-cus-pd">
+                    <a href="contact.html">
+                        <p>お問い合わせ・資料請求</p> 
+                        <small class="custom-fw">Contact</small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 footer-bottom-container order-1 order-lg-5">
+                <div class="footer-left-links">
+                <p>
+                    〒007-0841  
+                </p>
+                <p>
+                    札幌市東区北41条東8丁目2番25号
+                </p>
+                <p> 
+                    <a href="0117432233 ">TEL 011-743-2233 </a>
+                </p>
+                <p>
+                    FAX 011-743-2319
+                </p>
+                </div>
+            </div>
+            <div class="col-lg-6 footer-right-links order-5">
+                <a href="privacy-policy.html">
+                <small> 
+                    プライバシーポリシー
+                </small>
+                </a>
+                <a href="cookie-policy.html">
+                <small>
+                    クッキーポリシー
+                </small>
+                </a>
+                <small class="d-none d-lg-block">
+                    Copyright © 2026 TOWA E&C Corporation All rights reserved.
+                </small>
+                <small class="d-block d-lg-none custom-pd-copyright "> © 2026 TOWA E&C Corporation All rights reserved. </small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/index.js"></script>
+
+</body>
+</html>

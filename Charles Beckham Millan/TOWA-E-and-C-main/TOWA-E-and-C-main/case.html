@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/icons/company-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Manrope:wght@200..800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/case.css">
+    <title>導入事例</title>
+</head>
+<body>
+  <header class="case-header">
+    <nav class="navbar-horizontal">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand"><img src="assets/images/icons/company-logo.svg" alt="company logo"></a>
+                <div class="navbar-right-container">
+                <!-- Desktop Nav + CTA -->
+                <div class="d-none d-lg-flex desktop-nav-container">
+                    <a href="service-list.html" class="nav-link">事業紹介</a>
+                    <a href="case.html" class="nav-link">導入事例</a>
+                    <a href="news.html" class="nav-link">お知らせ</a>
+                    <a href="about.html" class="nav-link">会社情報</a>
+                </div>
+                <a href="contact.html" class="d-none d-lg-flex cta-btn">お問い合わせ・資料請求 <img src="assets/images/icons/plane.png" alt=""></a>
+                <button class="burger-btn navbar-toggler" type="button" id="burgerBtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Fullscreen Mobile Menu -->
+    <div class="mobile-menu container-fluid px-0" id="mobileMenu">
+            <button class="mobile-menu-header" id="closeMenu">&times;</button>
+            <div class="row mobile-nav-links">
+                <div class="col-12 col-md-7 col-lg-5 mobile-nav-links-wrapper">
+                    <div class="top-navlink">
+                    <a href="index.html">
+                        <p>トップ</p> 
+                        <small> Top </small> 
+                    </a>
+                    </div>
+                    <div class="nav-link-service">
+                        <a href="service-list.html">
+                            <p>事業紹介</p> 
+                            <small class="text-orange">Service</small>
+                        </a>
+                    </div>
+                    <ul class="row menu-service-list">
+                        <li class="col-7 col-lg-12 list list1"><a class="list1" href="local-gov.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">自治体ソリューション</a></li>
+                        <li class="col-6 col-lg-12 list col-lg-4"><a href="education.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">教育ソリューション</a></li>
+                        <li class="col-8 col-lg-12 list col-lg-4"><a href="corporate.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">企業・ビジネスソリューション</a></li>
+                        <li class="col-6 col-lg-12 list col-lg-4"><a href="support.html"><img src="assets/images/icons/navbar-line.svg" class="d-none d-lg-block" alt="line">サポートサービス</a></li>
+                    </ul>
+                    <div class="nav-link-case">
+                        <a href="case.html">
+                            <p>導入事例</p> 
+                            <small class="text-orange">Case</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 mobile-nav-links-wrapper mobile-nav-links-wrapper2">
+                    <div class="nav-link-news">
+                        <a href="news.html">
+                            <p>お知らせ</p> 
+                            <small class="text-orange">News</small>
+                        </a>
+                    </div>
+                    <div class="nav-link-about">
+                        <a href="about.html">
+                            <p>お知らせ</p> 
+                            <small class="text-orange">About</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12  col-lg-4 d-flex flex-lg-column cta-container">
+                    <div class="mobile-menu-cta">
+                        <div class="menu-header-cta">
+                            <p class="ms-2">電話で <br class="d-block d-lg-none"> 問い合わせる</p>
+                        </div>
+                        <div class="cta-content d-flex justify-content-between">
+                                <div class="d-flex justify-content-center align-items-end justify-content-lg-center align-items-lg-center flex-column">
+                                    <small>トゥワロー</small>
+                                    <a href="0120108624" class="en cta-tel" target="_blank">0120-108624</a> 
+                                </div>
+                            <div class="d-flex justify-content-end align-items-lg-end justify-content-lg-center">
+                                <img src="assets/images/icons/menu-play-btn-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">
+                    <div class="mobile-menu-cta mobile-menu-cta2">
+                        <div class="menu-header-cta">
+                            <p class="fw-bold">電話で <br class="d-block d-lg-none"> 問い合わせる</p>
+                        </div>
+                        <div class="cta-content cta-content2 d-flex justify-content-between">
+                            <div class="request-information d-flex justify-content-lg-center align-items-center">
+                            <p class="fw-bold">お問い合わせ・ <br class="d-block d-md-none"> 資料請求</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <img src="assets/images/icons/menu-play-btn-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="header-content">
+        <h1 class="main-title-jap txt-color-orange">導入事例</h1>
+        <p class="main-title-eng txt-color-orange-rgba">Case</p>
+    </div>
+
+    <div class="curve-container">
+        <svg width="620" height="93" viewBox="0 0 620 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-curve-svg">
+            <path d="M621 93H0C25.4154 93 46.0186 72.3426 46.0186 46.8605V46.1395C46.0186 20.6574 66.6219 0 92.0373 0H621V93Z" fill="white"/>
+        </svg>
+        
+        <div class="breadcrumb-overlay">
+            <a href="index.html">トップ</a>
+            <span class="breadcrumb-arrow">▶</span>
+            <span class="breadcrumb-current">導入事例</span>
+        </div>
+    </div>
+</header>
+
+<main class="case-container">
+    <div class="container container-inner">
+        <div class="row mb-5">
+            <div class="col-12 case-inner">          
+                <div class="filter-group">
+                    <label class="mb-3 label-name-container"> <span class="label-name">地域 <span class="custom-fs">で探す</span></span></label>
+                    <div class="d-flex mobile-filter-container">
+                        <div class="all-btn-wrapper me-2">
+                            <button class="btn btn-orange rounded-pill select-all-btn active" data-region="all">すべて</button>
+                        </div>   
+                        <div class="d-flex flex-wrap gap-2 choices-btn-wrapper">
+                            <button class="btn btn-outline-secondary rounded-pill custom-pad" data-region="central">道央</button>
+                            <button class="btn btn-outline-secondary rounded-pill custom-pad" data-region="east">道東</button>
+                            <button class="btn btn-outline-secondary rounded-pill custom-pad" data-region="north">道北</button>
+                            <button class="btn btn-outline-secondary rounded-pill custom-pad" data-region="south">道南</button>
+                        </div>                       
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="mb-3 label-name-container"><span class="label-name">カテゴリー<span class="custom-fs">で探す</span></span></label>
+                    <div class="d-flex mobile-filter-container">
+                        <div class="all-btn-wrapper me-2">
+                            <button class="btn btn-orange rounded-pill select-all-btn active" data-category="all">すべて</button>
+                        </div> 
+                        <div class="d-flex flex-wrap gap-2 choices-btn-wrapper">
+                            <button class="btn btn-outline-secondary rounded-pill" data-category="education">教育ソリューション</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-category="government">自治体ソリューション</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-category="business">企業・ビジネスソリューション</button>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="filter-group filter-group-category">
+                    <label class="mb-3 label-name-container"><span class="label-name"></span>システム<span class="custom-fs">で探す</span></label>
+                    <div class="d-flex mobile-filter-container">       
+                        <div class="all-btn-wrapper me-2">
+                            <button class="btn btn-outline-secondary rounded-pill active-orange" data-system="all">すべて</button>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-2 choices-btn-wrapper">
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="edu-facility"># 大学・教育施設</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="assembly"># 議場</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="public"># 公共施設</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="disaster"># 災害対策室</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="office"># オフィス・会議室</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="bosch"># BOSCH会議システム</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="hall"># ホール・会議場</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="sports"># スポーツ施設</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="event"># イベント運営</button>
+                            <button class="btn btn-outline-secondary rounded-pill" data-system="support"># サポートサービス</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-0 case-grid-grow">
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="education"
+                data-system="edu-facility event">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/first-image.png" alt="A bright classroom with white tables, chairs, and a projector screen.">
+                    </figure>                  
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">#映像システム</span>
+                            <span class="case-tag">#リモートコンシェル</span>
+                        </div>
+                        <p class="case-client-name">千歳科学技術大学 様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="central" 
+                data-category="government"
+                data-system="bosch">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/2nd-image.png" alt="A large lecture hall with rows of dark brown desks and black chairs.">
+                    </figure>               
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃議場・公共施設</span>
+                            <span class="case-tag">#BOSH会議システム</span>
+                        </div>
+                        <p class="case-client-name">北海道議会  様</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4 case-card-item" 
+                data-region="east" 
+                data-category="business"
+                data-system="public office">
+                <div class="case-card">
+                    <figure class="case-image-wrapper">
+                        <img class="img-fluid" src="assets/images/case/3rd-image.png" alt="A formal conference room with a U-shaped wooden table and wall-mounted TV.">
+                    </figure>
+                    <div class="case-content-area">
+                        <div class="case-tags">
+                            <span class="case-tag">＃オフィス・会議室</span>
+                            <span class="case-tag">＃サポートサービス</span>
+                        </div>
+                        <p class="case-client-name">JAおとふけ  様</p>
+                    </div>
+                </div>
+            </div>                           
+        </div>
+    </div>  
+
+   <div class="custom-pagination d-flex justify-content-center align-items-center gap-4">
+        <a href="javascript:void(0)" class="pagination-arrow" id="prevPage">
+            <img src="assets/images/icons/sm-prev-btn.svg" alt="">
+        </a>
+
+        <div class="page-numbers d-flex align-items-center gap-2">
+            <span class="page-num" data-page="1">1</span>
+            <span class="page-num active" data-page="2">2</span>
+            <span class="page-num" data-page="3">3</span>
+        </div>
+
+        <a href="javascript:void(0)" class="pagination-arrow" id="nextPage">
+            <img src="assets/images/icons/sm-next-btn.svg" alt="">
+        </a>
+    </div>
+</main>
+
+<footer class="footer-section case-footer-section">
+    <a href="contact.html" class="row footer-banner mx-auto">
+        <div class="footer-banner-content">
+            <div class="col-12 col-lg-4 footer-banner-title">
+                <h2>
+                    お問い合わせ <br>
+                    資料請求
+                </h2>
+                <p>Contact</p>     
+            </div>
+            <div class="col-12 col-lg-4 footer-banner-description">
+                お客様の課題・環境に合わせて設計から保守まで包括的にサポートします。無料のお見積りも承っております。内容確認の上、担当よりご連絡させていただきます。
+            </div>
+            <div class="col-12 col-lg-4 footer-banner-cta">
+                <img src="assets/images/icons/sm-play-btn.svg" alt="">
+            </div>
+        </div>
+    </a>
+    <div class="footer-body">
+        <div class="row footer-content mx-auto">
+            <div class="col-12 col-lg-6 footer-header">
+                <h2>
+                    北海道に寄り添い 
+                    ともに未来をつくる
+                </h2>
+            </div>
+            <div class="col-12 footer-end order-1 order-lg-5">
+            <img src="assets/images/icons/logo-white.svg" alt="">
+            </div>
+            <div class="col-12 col-lg-3 footer-left-nav-links order-2 order-lg-3">
+                <div class="footer-links footer-service-link">
+                    <a href="service-list.html">
+                        <p>事業紹介</p> 
+                        <small>service</small>
+                    </a>
+                </div>
+                <ul class="menu-service-list-footer">
+                    <li><a href="local-gov.html"><img src="assets/images/icons/line-white.svg" alt="line">自治体ソリューション</a></li>
+                    <li><a href="education.html"><img src="assets/images/icons/line-white.svg" alt="line">教育ソリューション</a></li>
+                    <li><a href="corporate.html"><img src="assets/images/icons/line-white.svg" alt="line">企業・ビジネスソリューション</a></li>
+                    <li><a href="support.html"><img src="assets/images/icons/line-white.svg" alt="line">サポートサービス</a></li>
+                </ul>
+                <div class="footer-links">
+                    <a href="case.html">
+                        <p>導入事例</p> 
+                        <small>case</small>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-3  footer-right-nav-links order-4 order-lg-4">
+                <div class="footer-links">
+                    <a href="news.html">
+                        <p>お知らせ</p> 
+                        <small>news</small>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">
+                        <p>会社情報</p> 
+                        <small>about</small>
+                    </a>
+                </div>
+                <div class="footer-links footer-links-contact-cus-pd">
+                    <a href="contact.html">
+                        <p>お問い合わせ・資料請求</p> 
+                        <small class="custom-fw">Contact</small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 footer-bottom-container order-1 order-lg-5">
+                <div class="footer-left-links">
+                <p>
+                    〒007-0841  
+                </p>
+                <p>
+                    札幌市東区北41条東8丁目2番25号
+                </p>
+                <p> 
+                    <a href="0117432233 ">TEL 011-743-2233 </a>
+                </p>
+                <p>
+                    FAX 011-743-2319
+                </p>
+                </div>
+            </div>
+            <div class="col-lg-6 footer-right-links order-5">
+                <a href="privacy-policy.html">
+                <small> 
+                    プライバシーポリシー
+                </small>
+                </a>
+                <a href="cookie-policy.html">
+                <small>
+                    クッキーポリシー
+                </small>
+                </a>
+                <small class="d-none d-lg-block">
+                    Copyright © 2026 TOWA E&C Corporation All rights reserved.
+                </small>
+                <small class="d-block d-lg-none custom-pd-copyright "> © 2026 TOWA E&C Corporation All rights reserved. </small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/index.js"></script>
+
+</body>
+</html>
