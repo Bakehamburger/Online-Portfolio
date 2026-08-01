@@ -165,4 +165,26 @@
     initScrollNav();
   });
 
+  const webBtn = document.getElementById("web_btn");
+const videoBtn = document.getElementById("video_btn");
+
+const websites = document.getElementById("websites-content");
+const videos = document.getElementById("videos-content");
+
+webBtn.addEventListener("click", function () {
+    websites.style.display = "block";
+    videos.style.display = "none";
+
+    webBtn.classList.add("active");
+    videoBtn.classList.remove("active");
+});
+
+videoBtn.addEventListener("click", function () {
+    websites.style.display = "none";
+    videos.style.display = "block";
+
+    videoBtn.classList.add("active");
+    webBtn.classList.remove("active");
+});
+
 })(jQuery);
